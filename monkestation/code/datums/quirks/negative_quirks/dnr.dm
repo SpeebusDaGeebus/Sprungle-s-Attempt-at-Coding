@@ -16,6 +16,3 @@
 	quirk_holder.mind.remove_traits(list(TRAIT_DEFIB_BLACKLISTED, TRAIT_NO_SPECIAL_REVIVAL), QUIRK_TRAIT)
 
 var/obj/item/organ/internal/brain/target_brain = quirk_holder.get_organ_slot(ORGAN_SLOT_BRAIN)
-	if(target_brain)
-		target_brain.maxHealth -= BRAIN_DAMAGE_SEVERE
-	return ..()
